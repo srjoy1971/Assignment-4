@@ -13,7 +13,7 @@
 <body class="bg-base-300">
     <header class="w-[80%] mx-auto">
         <h2 class="text-4xl font-bold text-blue-950 py-6">Job Application Tracker</h2>
-        <div class="grid grid-cols-3 gap-8 ">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 ">
             <div class="bg-base-200 p-4 rounded-2xl">
                 <p>Total</p>
                 <p id="total" class="font-bold text-blue-950 text-2xl">0</p>
@@ -35,7 +35,7 @@
             <h2 class="font-bold text-blue-950 text-3xl">Available Jobs</h2>
             <p class=" text-[#64748B]" id="jobs-count">8 jobs</p>
         </div>
-        <div class="space-x-2">
+        <div class="flex flex-wrap gap-2 justify-center md:justify-start">
             <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn" class="btn bg-blue-500 px-7">All</button>
             <button onclick="toggleStyle('interview-filter-btn')" id="interview-filter-btn" class="btn text-[#64748B]">Interview</button>
             <button onclick="toggleStyle('rejected-filter-btn')" id="rejected-filter-btn" class="btn text-[#64748B]">Rejected</button>
@@ -47,9 +47,9 @@
          </section>
 
 
-        <section id="allCards" class="space-y-6 ">
+        <section id="allCards" class="grid grid-cols-1 gap-6">
                 <!-- card-1 -->
-                <div class="card bg-base-200 gap-y-2 p-4 flex justify-between">
+                <div class="card bg-base-200 p-5 shadow-sm border border-base-100 transition-all">
                     <!-- main part-1 -->
                     <div class=" gap-y-2 space-y-6 flex-1">
                         <div class="flex justify-between">
