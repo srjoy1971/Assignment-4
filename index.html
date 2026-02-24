@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-base-300">
-    <header class="w-[80%] mx-auto">
+    <header class="w-[80%] mx-auto sticky top-0 z-10 bg-base-300">
         <h2 class="text-4xl font-bold text-blue-950 py-6">Job Application Tracker</h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 ">
             <div class="bg-base-200 p-4 rounded-2xl">
@@ -27,11 +27,12 @@
                 <p id="rejectedCount" class="font-bold text-red-500 text-2xl">0</p>
             </div>
         </div>
+        <hr class="my-8">
     </header>
-    <hr class="my-8">
+    
 
     <main id="all-cards" class="w-[80%] mx-auto pb-10 space-y-4">
-        <div class="flex justify-between mb-7">
+        <div class="flex justify-between mb-7 ">
             <h2 class="font-bold text-blue-950 text-3xl">Available Jobs</h2>
             <p class=" text-[#64748B]" id="jobs-count">8 jobs</p>
         </div>
